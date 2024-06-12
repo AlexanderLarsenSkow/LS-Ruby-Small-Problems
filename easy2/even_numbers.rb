@@ -16,8 +16,8 @@ numbers = 1..99
 
 #numbers.each{|n| puts n if n.even?}
 
-1.upto(99) {|n| puts n if n % 2 == 0}
+#1.upto(99) {|n| puts n if n % 2 == 0}
 
-#array = numbers.select{|n| n.even?}
+array = numbers.select{|n| n.even?}
 
-#puts array
+puts array
