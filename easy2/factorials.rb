@@ -3,7 +3,7 @@
 
 def recursion_factorial(n) 
     if n > 1
-      n * recursion(n - 1)
+      n * recursion_factorial(n - 1)
     else 
       n
     end 
@@ -23,3 +23,9 @@ def loop_factorial(n)
 end 
 
 puts loop_factorial(5)
+
+def inject_factorial(n) 
+  (1..n).inject(:*)
+end 
+
+puts inject_factorial(5)
